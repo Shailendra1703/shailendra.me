@@ -59,7 +59,9 @@ export default function RootLayout({ children }) {
       <body className="max-w-5xl mx-auto">
         <Providers>
           <Navbar />
-          <RollingIcons />
+          <nav className="fixed bottom-4 left-2 z-50 sm:left-4 md:left-6">
+            <RollingIcons />
+          </nav>
           {children}
           <Footer />
         </Providers>
