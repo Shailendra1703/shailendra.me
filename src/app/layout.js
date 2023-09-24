@@ -8,6 +8,47 @@ import RollingIcons from "yes@@/ui/RollingIcons";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  authors: [{ name: "Shailendra Singh", url: "https://singhshailendra.me" }],
+  category: "developer",
+  creator: "Shailendra Singh",
+  description: "software developer",
+  keywords: [
+    "Shailendra Singh",
+    "Shailendra",
+    "Jaipur",
+    "singhshailendra",
+    "notion",
+    "notionstyle",
+    "illustration",
+    "singhshailendra.me",
+    "India",
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "TailwindCSS",
+    "Design",
+    "Engineering",
+    "Frontend",
+    "Developer",
+    "Software",
+  ],
+  publisher: "Shailendra Singh",
+  robots: {
+    follow: true,
+    googleBot: {
+      follow: true,
+      index: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+    index: true,
+  },
+  themeColor: [
+    { color: "white", media: "(prefers-color-scheme: light)" },
+    { color: "black", media: "(prefers-color-scheme: dark)" },
+  ],
   title: "Shailendra Singh",
   description: "Portfolio website of shailendra singh",
 };

@@ -1,7 +1,21 @@
 {
-  "name": "notionstyle",
+  "name": "singhshailendra.me",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "email": "singhshailendra1701@gmail.com",
+    "name" : "Shailendra Singh",
+    "url" : "https://singhshailendra.me"
+  },
+  "homepage": "https://singhshailendra.me",
+  "keywords": [
+    "tailwindcss",
+    "template",
+    "react",
+    "nextjs",
+    "portfolio",
+    "personal-site"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
