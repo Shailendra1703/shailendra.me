@@ -5,8 +5,8 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="flex  items-center justify-between my-10">
-      <p className="font-bold text-xl ">🗃️ Shailendra Singh</p>
-      <div className="space-x-4">
+      <p className="font-bold text-xl px-8 lg:px-0">🗃️ Shailendra Singh</p>
+      <div className="space-x-4 hidden lg:block">
         {navbar.map((data) => {
           return (
             <Link

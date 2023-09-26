@@ -1,26 +1,33 @@
 import React from "react";
 import Image from "next/image";
 import hero from "../assets/hero.svg";
+import Heading from "yes@@/utils/Heading";
+import { aboutme } from "yes@@/constants/aboutme";
 const Aboutme = () => {
   return (
-    <div className="grid grid-cols-2 justify-center items-center gap-5 my-20">
-      <div>
-        <h1 className="font-bold text-2xl py-2">Heyy Hii it's Shailendra </h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
-          laudantium autem nisi ipsum optio nemo ipsa fugit nostrum itaque
-          delectus, doloremque nihil molestiae expedita quidem fuga est facilis
-          officiis cumque deserunt assumenda consectetur, magnam aliquid?
-          Tempora beatae, quasi, eveniet veniam ab dolorem fuga nemo, enim error
-          delectus harum in ratione itaque laboriosam vero necessitatibus
-          perspiciatis ex saepe vitae officiis! Magnam dicta voluptas libero,
-          cumque asperiores iusto unde laudantium voluptatem. Dicta, sint
-          aliquid quas eos beatae ab autem delectus accusantium esse aperiam
-          debitis? Expedita harum eveniet a veniam et deserunt nam?
-        </p>
+    <div className="px-8 lg:px-0">
+      <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-5 my-20">
+        <div>
+          <Heading heading={"Hii it's Shailendra Singh"} size="lg" />
+          <p>{aboutme.about}</p>
+        </div>
+        <Image src={hero} alt="heroimage" className="hidden lg:block" />
       </div>
+      <Heading heading={"Tools"} size={"lg"} />
+      <Heading heading={"Software"} size={"sm"} />
 
-      <Image src={hero} alt="heroimage" />
+      <ul className="list-disc my-2">
+        {aboutme.software.map((data) => {
+          return <li key={data}>{data}</li>;
+        })}
+      </ul>
+      <Heading heading={"Hardware"} size={"sm"} />
+
+      <ul className="list-disc my-2">
+        {aboutme.hardware.map((data) => {
+          return <li key={data}>{data}</li>;
+        })}
+      </ul>
     </div>
   );
 };
