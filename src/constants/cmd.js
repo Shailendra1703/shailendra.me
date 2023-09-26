@@ -45,13 +45,13 @@ export const actions = [
     color: "#EC79F9",
     iconColor: "#5C0E63",
   },
-  {
-    name: "System",
-    keywords: "system",
-    section: "Themes",
-    color: "#FF7F50",
-    iconColor: "#9f3e1b",
-  },
+  // {
+  //   name: "System",
+  //   keywords: "system",
+  //   section: "Themes",
+  //   color: "#FF7F50",
+  //   iconColor: "#9f3e1b",
+  // },
 ];
 
 export const Navigation = [

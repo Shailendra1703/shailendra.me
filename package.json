@@ -23,6 +23,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "@react-three/drei": "^9.84.2",
     "@react-three/fiber": "^8.14.2",
     "autoprefixer": "10.4.16",

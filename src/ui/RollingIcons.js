@@ -4,6 +4,16 @@ import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
 import { GitHubLogo, TwitterLogo } from "yes@@/constants/icons";
 import { actions } from "yes@@/constants/cmd";
+import Link from "next/link";
+import { cn } from "yes@@/utils/className";
+import {
+  HomeIcon,
+  MoonIcon,
+  PencilIcon,
+  PlusIcon,
+  ComputerDesktopIcon,
+  SunIcon,
+} from "@heroicons/react/24/solid";
 
 const RollingIcons = () => {
   const [expanded, setExpanded] = useState(false);
@@ -54,7 +64,6 @@ const RollingIcons = () => {
     const handleOutsideClick = (e) => {
       const target = e.target;
       if (ref.current?.contains(target)) return;
-
       setExpanded(false);
     };
 
@@ -76,11 +85,11 @@ const RollingIcons = () => {
       <motion.button
         animate={{ rotate: expanded ? 45 : 0 }}
         aria-label="Navigation menu"
-        className="h-10 w-10 select-none items-center justify-center rounded-full bg-black p-3 dark:bg-white"
+        className="h-12 w-12  select-none items-center justify-center rounded-full bg-black p-3 dark:bg-white"
         onClick={handleClick}
         whileTap={{ scale: 1.1 }}
       >
-        ➕{/* <GitHubLogo className="h-6 w-6 text-white dark:text-black" /> */}
+        <PlusIcon className="h-6 w-6 text-white dark:text-black " />
       </motion.button>
       <AnimatePresence>
         {expanded && (
@@ -89,7 +98,7 @@ const RollingIcons = () => {
               return (
                 <motion.div
                   animate="visible"
-                  className="mx-0.5"
+                  className="mx-0.5 "
                   custom={i}
                   exit="hidden"
                   initial="hidden"
@@ -109,21 +118,70 @@ const RollingIcons = () => {
                     },
                   }}
                 >
-                  {action.keywords === "home" && (
-                    <GitHubLogo
-                      className={`h-6 w-6 text-[${action.iconColor}]`}
-                    />
-                  )}
-                  {action.keywords === "github" && (
-                    <GitHubLogo
-                      className={`h-6 w-6 text-[${action.iconColor}]`}
-                    />
-                  )}
-                  {action.keywords === "writing" && (
-                    <GitHubLogo
-                      className={`h-6 w-6 text-[${action.iconColor}]`}
-                    />
-                  )}
+                  <Compute
+                    as={
+                      action.section === "Navigation"
+                        ? Link
+                        : action.section === "Socials"
+                        ? "a"
+                        : "button"
+                    }
+                    className={cn(
+                      "flex  cursor-pointer select-none flex-col items-center space-y-1 p-3 transition-all duration-200",
+                      "rounded-full",
+                      `bg-[${action.color}]`
+                    )}
+                    href={action?.href}
+                    key={i}
+                    onClick={
+                      action.section === "Themes"
+                        ? () => changeTheme(action.keywords)
+                        : undefined
+                    }
+                    rel={
+                      action.section === "Socials"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    tabIndex={0}
+                    target={action.section === "Socials" ? "_blank" : undefined}
+                  >
+                    {action.keywords === "home" && (
+                      <HomeIcon
+                        className={`h-6 w-6 text-[${action.iconColor}]`}
+                      />
+                    )}
+                    {action.keywords === "writing" && (
+                      <PencilIcon
+                        className={`h-6 w-6 text-[${action.iconColor}]`}
+                      />
+                    )}
+                    {action.keywords === "github" && (
+                      <GitHubLogo
+                        className={`h-6 w-6 text-[${action.iconColor}]`}
+                      />
+                    )}
+                    {action.keywords === "twitter" && (
+                      <TwitterLogo
+                        className={`h-6 w-6 text-[${action.iconColor}]`}
+                      />
+                    )}
+                    {action.keywords === "light" && (
+                      <SunIcon
+                        className={`h-6 w-6 text-[${action.iconColor}]`}
+                      />
+                    )}
+                    {action.keywords === "dark" && (
+                      <MoonIcon
+                        className={`h-6 w-6 text-[${action.iconColor}]`}
+                      />
+                    )}
+                    {action.keywords === "system" && (
+                      <ComputerDesktopIcon
+                        className={`h-6 w-6 text-[${action.iconColor}]`}
+                      />
+                    )}
+                  </Compute>
                 </motion.div>
               );
             })}
@@ -133,5 +191,10 @@ const RollingIcons = () => {
     </div>
   );
 };
+
+function Compute({ as, children, ...props }) {
+  const Component = as;
+  return <Component {...props}>{children}</Component>;
+}
 
 export default RollingIcons;
