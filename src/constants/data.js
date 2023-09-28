@@ -1,7 +1,7 @@
 const navbar = [
   {
     name: "About",
-    href: "/about",
+    href: "/",
   },
   {
     name: "Projects",
@@ -17,4 +17,43 @@ const navbar = [
   },
 ];
 
-export { navbar };
+const projects = [
+  {
+    name: "ChatApp",
+    year: "2022",
+    description: "A real time chat Appliction created using React and Firebase",
+    source: ["https://github.com"],
+  },
+  {
+    name: "Sorting Visualizer",
+    year: "2022",
+    description: "A real time chat Appliction created using React and Firebase",
+    source: ["https://github.com"],
+  },
+  {
+    name: "ChatApp",
+    year: "2021",
+    description: "A real time chat Appliction created using React and Firebase",
+    source: ["https://github.com"],
+  },
+  {
+    name: "ChatApp",
+    year: "2021",
+    description: "A real time chat Appliction created using React and Firebase",
+    source: ["https://github.com"],
+  },
+  {
+    name: "ChatApp",
+    year: "2021",
+    description: "A real time chat Appliction created using React and Firebase",
+    source: ["https://github.com"],
+  },
+  {
+    name: "ChatApp",
+    year: "2021",
+    description: "A real time chat Appliction created using React and Firebase",
+    source: ["https://github.com"],
+  },
+];
+
+export { navbar, projects };
