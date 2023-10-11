@@ -1,6 +1,6 @@
 export const aboutme = {
   about:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ad earum dolore delectus rerum maiores eum nisi? Quis inventore rerum officia cum, pariatur fuga tempore, nisi aspernatur itaque mollitia commodi ab officiis aperiam totam, molestias cupiditate vel vitae doloremque libero dolore corporis! Natus illum nesciunt iste commodi reprehenderit incidunt omnis! Itaque, qui ex quod harum officia voluptate commodi necessitatibus distinctio?",
+    "Exploring ways to create robust, scalable web Apps , Unlimitedly obsessed with solving problems where desing and engineering intersects, by creating pixel-perfect , polished interfaces. Currently tinkering with various projects. studying Computer Science, Intereseted in coding and improving consistently through learing. Currently interesed in React Native and TypeScript",
   software: ["VS code ", "Terminal"],
   hardware: ["Dell Inspiron", "Cosmic byte"],
 };

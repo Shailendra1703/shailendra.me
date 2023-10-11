@@ -127,7 +127,7 @@ const RollingIcons = () => {
                         : "button"
                     }
                     className={cn(
-                      "flex  cursor-pointer select-none flex-col items-center space-y-1 p-3 transition-all duration-200",
+                      "flex  cursor-pointer select-none flex-col items-center space-y-1 p-3 transition-all duration-200 bg-slate-300 dark:bg-slate-700",
                       "rounded-full",
                       `bg-[${action.color}]`
                     )}

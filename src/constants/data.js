@@ -27,29 +27,30 @@ const projects = [
   {
     name: "Sorting Visualizer",
     year: "2022",
+    description:
+      "Gives a visual representation of different sorting algorithms",
+    source: ["https://github.com"],
+  },
+  {
+    name: "Netflix Clone",
+    year: "2022",
     description: "A real time chat Appliction created using React and Firebase",
     source: ["https://github.com"],
   },
   {
-    name: "ChatApp",
+    name: "Crownworld",
     year: "2021",
     description: "A real time chat Appliction created using React and Firebase",
     source: ["https://github.com"],
   },
   {
-    name: "ChatApp",
+    name: "Quote Generator",
     year: "2021",
     description: "A real time chat Appliction created using React and Firebase",
     source: ["https://github.com"],
   },
   {
-    name: "ChatApp",
-    year: "2021",
-    description: "A real time chat Appliction created using React and Firebase",
-    source: ["https://github.com"],
-  },
-  {
-    name: "ChatApp",
+    name: "Face Detector",
     year: "2021",
     description: "A real time chat Appliction created using React and Firebase",
     source: ["https://github.com"],

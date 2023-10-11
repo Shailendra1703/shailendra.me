@@ -5,7 +5,9 @@ const Heading = (props) => {
   return (
     <h1
       className={cn(
-        props.size === "lg" ? `font-bold text-2xl py-2` : `text-xl py-2`
+        props.size === "lg"
+          ? `font-bold text-2xl py-2 my-2`
+          : `text-xl py-2 my-2`
       )}
     >
       {props.heading}
