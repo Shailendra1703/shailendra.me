@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "yes@@/*": ["./src/*"]
+      "yes@@/*": ["./src/*"],
+      "contentlayer/generated": [".contentlayer/generated"]
+
     }
   }
 }

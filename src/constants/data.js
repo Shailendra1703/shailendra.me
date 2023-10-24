@@ -22,38 +22,44 @@ const projects = [
     name: "ChatApp",
     year: "2022",
     description: "A real time chat Appliction created using React and Firebase",
-    source: ["https://github.com"],
+    source: ["https://github.com/Shailendra1703/ChatApp"],
+  },
+  {
+    name: "Jsearch",
+    year: "2023",
+    description: "A react native based application which displays latest jobs",
+    source: ["https://github.com/Shailendra1703/JobsApp"],
   },
   {
     name: "Sorting Visualizer",
     year: "2022",
     description:
       "Gives a visual representation of different sorting algorithms",
-    source: ["https://github.com"],
+    source: ["https://github.com/Shailendra1703/Array-Sorting-Visualizer"],
   },
   {
     name: "Netflix Clone",
     year: "2022",
     description: "A real time chat Appliction created using React and Firebase",
-    source: ["https://github.com"],
+    source: ["https://github.com/Shailendra1703/Netflix"],
   },
   {
     name: "Crownworld",
     year: "2021",
     description: "A real time chat Appliction created using React and Firebase",
-    source: ["https://github.com"],
+    source: ["https://crownworld.io"],
   },
   {
     name: "Quote Generator",
     year: "2021",
     description: "A real time chat Appliction created using React and Firebase",
-    source: ["https://github.com"],
+    source: ["https://github.com/Shailendra1703/Quote-Generator"],
   },
   {
     name: "Face Detector",
     year: "2021",
     description: "A real time chat Appliction created using React and Firebase",
-    source: ["https://github.com"],
+    source: ["https://github.com/Shailendra1703/Face-Recognizer"],
   },
 ];
 
