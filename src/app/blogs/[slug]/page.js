@@ -4,7 +4,6 @@ import { allDocs } from "contentlayer/generated";
 async function getDocFromParams(slug) {
   const doc = allDocs.find((doc) => doc.slugAsParams === slug);
   if (!doc) return;
-  console.log(doc);
 
   return doc;
 }
