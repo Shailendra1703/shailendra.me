@@ -9,7 +9,7 @@ import remarkGfm from "remark-gfm";
 const computedFields = {
   slug: {
     type: "string",
-    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
   },
   slugAsParams: {
     type: "string",
@@ -28,6 +28,11 @@ export const Doc = defineDocumentType(() => ({
     },
     description: {
       type: "string",
+      required: true,
+    },
+    publishedAt: {
+      type: "string",
+      required: true,
     },
     published: {
       type: "boolean",
