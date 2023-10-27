@@ -11,7 +11,11 @@ const Aboutme = () => {
           <Heading heading={"Hii I'm Shailendra Singh"} size="lg" />
           <p className="py-3">{aboutme.about}</p>
         </div>
-        <Image src={hero} alt="heroimage" className="hidden lg:block" />
+        <Image
+          src={hero}
+          alt="heroimage"
+          className="hidden lg:block cursor-pointer"
+        />
       </div>
       <Heading heading={"Tools"} size={"lg"} />
       <Heading heading={"Software"} size={"lg"} />

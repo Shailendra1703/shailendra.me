@@ -4,6 +4,7 @@ import { allDocs } from "contentlayer/generated";
 import Link from "next/link";
 import { pick } from "contentlayer/client";
 import { cn } from "yes@@/utils/className";
+import "../../styles/prose.css";
 
 export const metaData = {
   title: "Blogs",
@@ -34,7 +35,7 @@ const page = async () => {
               href={`/blogs/${post.slug}`}
               className={cn(
                 "flex flex-row justify-between py-2 px-2 -mx-2 rounded-md my-2",
-                "hover:bg-gray-200 dark:hover:bg-gray-600",
+                "hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:bg-opacity-20",
                 "transition-all duration-200"
               )}
             >

@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Footer from "yes@@/ui/Footer";
 import Providers from "./providers";
 import RollingIcons from "yes@@/ui/RollingIcons";
+import AnimateEnter from "yes@@/ui/AnimateEnter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -56,14 +57,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-5xl mx-auto">
+      <body className="max-w-5xl mx-auto bg-white dark:bg-[#171717]">
         <Providers>
-          <Navbar />
-          <nav className="fixed bottom-4 left-2 z-50 sm:left-4 md:left-6">
-            <RollingIcons />
-          </nav>
-          {children}
-          <Footer />
+          <AnimateEnter>
+            <>
+              <Navbar />
+              <nav className="fixed bottom-4 left-2 z-50 sm:left-4 md:left-6">
+                <RollingIcons />
+              </nav>
+              {children}
+              <Footer />
+            </>
+          </AnimateEnter>
         </Providers>
       </body>
     </html>

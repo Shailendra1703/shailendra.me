@@ -40,25 +40,28 @@ const projects = [
   {
     name: "Netflix Clone",
     year: "2022",
-    description: "A real time chat Appliction created using React and Firebase",
+    description:
+      "It's a MERN stack based project , which is a clone of real world netflix",
     source: ["https://github.com/Shailendra1703/Netflix"],
   },
   {
     name: "Crownworld",
     year: "2021",
-    description: "A real time chat Appliction created using React and Firebase",
+    description: "A landing page developed for a web3 company named crownworld",
     source: ["https://crownworld.io"],
   },
   {
     name: "Quote Generator",
     year: "2021",
-    description: "A real time chat Appliction created using React and Firebase",
+    description:
+      "A Javascript API based project which generates random Quotes each time ",
     source: ["https://github.com/Shailendra1703/Quote-Generator"],
   },
   {
     name: "Face Detector",
     year: "2021",
-    description: "A real time chat Appliction created using React and Firebase",
+    description:
+      "A Javascript based project which recognizes the faces in laptop",
     source: ["https://github.com/Shailendra1703/Face-Recognizer"],
   },
 ];
