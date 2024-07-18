@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import hero from "../assets/hero.svg";
-import Heading from "yes@@/utils/Heading";
-import { aboutme } from "yes@@/constants/aboutme";
+import hero from "../../assets/hero.svg";
+import Heading from "@/utils/Heading";
+import { aboutme } from "@/constants/aboutme";
 const Aboutme = () => {
   return (
-    <div className="px-8 lg:px-0">
+    <div className="px-8 lg:px-0 max-w-6xl mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-5 my-20">
         <div>
           <Heading heading={"Hii I'm Shailendra Singh"} size="lg" />

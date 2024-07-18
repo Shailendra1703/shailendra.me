@@ -27,12 +27,12 @@ const RadarPreview = () => {
       <div className="mx-auto w-full max-w-md">
         <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
           <IconContainer
-            text="Maintenence"
+            text="Figma"
             delay={0.5}
             icon={<FaFigma className=" h-8 w-8 text-slate-600" />}
           />
           <IconContainer
-            text="Server management"
+            text="Code management"
             icon={<FaGithub className=" h-8 w-8 text-slate-600" />}
             delay={0.8}
           />
@@ -42,12 +42,12 @@ const RadarPreview = () => {
         <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
           <IconContainer
             delay={0.6}
-            text="GitHub Integration"
+            text="Figma"
             icon={<FaFigma className=" h-8 w-8 text-slate-600" />}
           />
           <IconContainer
             delay={0.7}
-            text="CMS Integration"
+            text="Figma"
             icon={<FaFigma className=" h-8 w-8 text-slate-600" />}
           />
         </div>

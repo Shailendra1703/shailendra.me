@@ -1,9 +1,9 @@
 import React from "react";
 import { allDocs } from "contentlayer/generated";
-import MDXComponents from "yes@@/ui/MDXComponents";
+import MDXComponents from "@/components/ui/MDXComponents";
 import Link from "next/link";
-import ExternalLinks from "yes@@/utils/ExternalLinks";
-import AnimateEnter from "yes@@/ui/AnimateEnter";
+import ExternalLinks from "@/utils/ExternalLinks";
+import AnimateEnter from "@/components/ui/AnimateEnter";
 
 async function getDocFromParams(slug) {
   const doc = allDocs.find((doc) => doc.slugAsParams === slug);

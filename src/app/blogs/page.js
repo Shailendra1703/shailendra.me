@@ -1,9 +1,9 @@
 import React from "react";
-import Heading from "yes@@/utils/Heading";
+import Heading from "@/utils/Heading";
 import { allDocs } from "contentlayer/generated";
 import Link from "next/link";
 import { pick } from "contentlayer/client";
-import { cn } from "yes@@/utils/className";
+import { cn } from "@/utils/className";
 import "../../styles/prose.css";
 
 export const metaData = {

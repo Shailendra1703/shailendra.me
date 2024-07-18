@@ -7,7 +7,7 @@ const AnimateEnter = ({ children }) => {
     <LazyMotion features={domAnimation}>
       <m.main
         animate={{ opacity: 1, y: 0 }}
-        className="mx-auto max-w-5xl"
+        className=""
         exit={{ opacity: 0, y: 20 }}
         initial={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}

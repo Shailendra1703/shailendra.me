@@ -1,4 +1,4 @@
-import { cn } from "yes@@/utils/className";
+import { cn } from "@/utils/className";
 
 export function GitHubLogo({ className }) {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
 import Link from "next/link";
-import ExternalLinks from "yes@@/utils/ExternalLinks";
+import ExternalLinks from "@/utils/ExternalLinks";
 
 const CustomLink = (props) => {
   const href = props.href;

@@ -1,8 +1,8 @@
 import React from "react";
-import { projects } from "yes@@/constants/data";
-import AnimateEnter from "yes@@/ui/AnimateEnter";
-import ExternalLinks from "yes@@/utils/ExternalLinks";
-import Heading from "yes@@/utils/Heading";
+import { projects } from "@/constants/data";
+import AnimateEnter from "@/components/ui/AnimateEnter";
+import ExternalLinks from "@/utils/ExternalLinks";
+import Heading from "@/utils/Heading";
 import { AnimatedPinDemo } from "../page";
 
 const Projects = () => {

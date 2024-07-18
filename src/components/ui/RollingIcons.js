@@ -2,10 +2,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
-import { GitHubLogo, TwitterLogo } from "yes@@/constants/icons";
-import { actions } from "yes@@/constants/cmd";
+import { GitHubLogo, TwitterLogo } from "@/constants/icons";
+import { actions } from "@/constants/cmd";
 import Link from "next/link";
-import { cn } from "yes@@/utils/className";
+import { cn } from "@/utils/className";
 import {
   HomeIcon,
   MoonIcon,

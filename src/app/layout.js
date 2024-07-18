@@ -1,10 +1,10 @@
 import "./globals.css";
-import Navbar from "yes@@/ui/Navbar";
+import Navbar from "@/components/ui/Navbar";
 import { Inter } from "next/font/google";
-import Footer from "yes@@/ui/Footer";
+import Footer from "@/components/ui/Footer";
 import Providers from "./providers";
-import RollingIcons from "yes@@/ui/RollingIcons";
-import AnimateEnter from "yes@@/ui/AnimateEnter";
+import RollingIcons from "@/components/ui/RollingIcons";
+import AnimateEnter from "@/components/ui/AnimateEnter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,16 +57,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-5xl mx-auto bg-white dark:bg-[#171717]">
+      <body className="bg-white dark:bg-slate-950">
         <Providers>
           <AnimateEnter>
             <>
-              <Navbar />
               <nav className="fixed bottom-4 left-2 z-50 sm:left-4 md:left-6">
                 <RollingIcons />
               </nav>
               {children}
-              <Footer />
+              {/* <Footer /> */}
             </>
           </AnimateEnter>
         </Providers>

@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "yes@@/*": ["./src/*"],
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@ui/*": ["./src/components/ui/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   }

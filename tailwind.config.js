@@ -3,11 +3,16 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/ui/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ["Montserrat"],
+        poppins: ["Poppins"],
+        kaushan: ["Kaushan Script"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,6 +20,7 @@ module.exports = {
       },
       animation: {
         "radar-spin": "radar-spin 10s linear infinite",
+        shimmer: "shimmer 3s linear infinite",
       },
       keyframes: {
         "radar-spin": {
@@ -23,6 +29,15 @@ module.exports = {
           },
           to: {
             transform: "rotate(380deg)",
+          },
+        },
+
+        shimmer: {
+          "0%": {
+            backgroundPosition: "200% 0",
+          },
+          "100%": {
+            backgroundPosition: "-200% 0",
           },
         },
       },

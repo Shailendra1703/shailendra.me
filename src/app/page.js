@@ -1,19 +1,18 @@
 "use client";
 import React from "react";
-import { PinContainer } from "yes@@/ui/3dpin";
+import { PinContainer } from "@/components/ui/3dpin";
 import Image from "next/image";
-import Aboutme from "../ui/Aboutme";
-import AnimateEnter from "yes@@/ui/AnimateEnter";
+import Aboutme from "../components/ui/Aboutme";
+import AnimateEnter from "@/components/ui/AnimateEnter";
 import hero from "../assets/hero.svg";
-import RadarPreview from "yes@@/ui/RadarPreview";
+import RadarPreview from "@/components/ui/RadarPreview";
+import { BackgroundCellAnimation } from "@/components/ui/BackgroundRippleEffect";
+import Works from "@/components/sections/works";
 
 export function AnimatedPinDemo() {
   return (
     <div className="h-[40rem] w-full flex items-center justify-center ">
-      <PinContainer
-        title="/ui.aceternity.com"
-        href="https://twitter.com/mannupaaji"
-      >
+      <PinContainer title="Shailendra Singh" href="https://singhshailendra.me">
         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
             Aceternity UI
@@ -35,10 +34,9 @@ export function AnimatedPinDemo() {
 export default function Home() {
   return (
     <AnimateEnter>
-      <main className="max-w-5xl mx-auto font-Poppins">
-        <Aboutme />
-        <AnimatedPinDemo />
-        <RadarPreview />
+      <main className="font-Poppins">
+        <BackgroundCellAnimation />
+        <Works />
       </main>
     </AnimateEnter>
   );
