@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
                 <RollingIcons />
               </nav>
               {children}
-              {/* <Footer /> */}
+              <Footer />
             </>
           </AnimateEnter>
         </Providers>

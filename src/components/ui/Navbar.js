@@ -8,12 +8,12 @@ const Navbar = () => {
       className="fixed w-[100vw] font-poppins text-white"
       style={{ zIndex: 100 }}
     >
-      <nav className="flex flex-row  justify-between max-w-5xl mx-auto py-3 px-4 border border-slate-300 border-opacity-30 rounded-md my-4 backdrop-filter backdrop-blur-lg mt:10">
+      <nav className="flex flex-row lg:-translate-x-2  justify-between max-w-4xl mx-auto py-3 px-4 border border-slate-300 border-opacity-30 rounded-md my-4 backdrop-filter backdrop-blur-lg">
         <Link
           href="/"
           className="font-poppins text-xl font-semibold flex items-center"
         >
-          <FaCode className="h-6 w-6 opacity-80 mr-4" />{" "}
+          <FaCode className="h-6 w-6 opacity-80 mr-4" />
           <span className="font-kaushan">Shailendra Singh</span>
         </Link>
         <div className="space-x-4 hidden lg:block">

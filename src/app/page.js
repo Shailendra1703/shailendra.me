@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-import { PinContainer } from "@/components/ui/3dpin";
 import Image from "next/image";
 import Aboutme from "../components/ui/Aboutme";
 import AnimateEnter from "@/components/ui/AnimateEnter";
 import hero from "../assets/hero.svg";
-import RadarPreview from "@/components/ui/RadarPreview";
 import { BackgroundCellAnimation } from "@/components/ui/BackgroundRippleEffect";
 import Works from "@/components/sections/works";
+import LatestBlogs from "@/components/sections/LatestBlogs";
 
 export function AnimatedPinDemo() {
   return (
@@ -36,7 +35,6 @@ export default function Home() {
     <AnimateEnter>
       <main className="font-Poppins">
         <BackgroundCellAnimation />
-        <Works />
       </main>
     </AnimateEnter>
   );

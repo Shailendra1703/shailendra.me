@@ -1,15 +1,14 @@
 import React from "react";
-import { useMDXComponent } from "next-contentlayer/hooks";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import Link from "next/link";
 import ExternalLinks from "@/utils/ExternalLinks";
+import { CodeBlock } from "../blogs/post/Codeblock";
 
 const CustomLink = (props) => {
   const href = props.href;
 
-  const isInternalLink = href && href.startsWith("/");
-
-  if (isInternalLink) {
+  if (href.startsWith("/")) {
     return (
       <Link href={href} {...props}>
         {props.children}
@@ -28,12 +27,22 @@ function RoundedImage(props) {
   return <Image alt={props.alt} className="rounded-lg" {...props} />;
 }
 
-const components = { CustomLink, RoundedImage, CustomLink };
-const MDXComponents = ({ code }) => {
-  const Component = useMDXComponent(code);
+const components = {
+  CodeBlock,
+  a: CustomLink,
+  img: RoundedImage,
+  // Add any other custom components here
+};
+
+const MDXComponents = ({ source }) => {
+  if (!source) {
+    console.error("Source is null or undefined");
+    return null; // or return some fallback UI
+  }
   return (
     <article className="prose-quoteless prose prose-neutral dark:prose-invert">
-      <Component components={components} />
+      {JSON.stringify(source, null)}
+      <MDXRemote {...source} components={components} />
     </article>
   );
 };

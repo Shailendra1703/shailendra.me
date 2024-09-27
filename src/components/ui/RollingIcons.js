@@ -151,7 +151,7 @@ const RollingIcons = () => {
                         className={`h-6 w-6 text-[${action.iconColor}]`}
                       />
                     )}
-                    {action.keywords === "writing" && (
+                    {action.keywords === "blogs" && (
                       <PencilIcon
                         className={`h-6 w-6 text-[${action.iconColor}]`}
                       />

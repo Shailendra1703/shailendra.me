@@ -3,51 +3,65 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Navbar from "./Navbar";
-
-import { Badge } from "./Badge";
-import hero from "../../assets/avatar.webp";
+import { RoughNotation } from "react-rough-notation";
+import profile from "../../assets/profile.jpg";
 import Image from "next/image";
+import LatestBlogs from "../sections/LatestBlogs";
 
 const Aboutme = () => {
   return (
     <>
-      <div class="absolute inset-0 flex   items-center">
-        <div class="relative z-40 mx-auto  max-w-5xl ">
-          <div className="flex flex-col justify-between space-y-10 md:mt-10  md:flex-row md:space-x-10 md:space-y-0">
+      <div className="absolute inset-0 flex mt-52">
+        <div className="relative z-40 mx-auto  max-w-[52rem] ">
+          <div className="flex flex-col justify-between space-y-10  md:flex-row md:space-x-10 md:space-y-0">
             <div>
-              <h1 class="max-w-3xl text-3xl font-bold text-zinc-50 md:text-5xl md:leading-tight">
-                Hey! I'm <span class="text-cyan-500">Shailendra Singh</span> and
-                I'm a full stack Developer.
+              <h1 className="max-w-3xl text-2xl font-bold text-zinc-50 md:text-5xl md:leading-tight ">
+                Hey! I'm{" "}
+                <RoughNotation
+                  type="highlight"
+                  show
+                  color="#f59e0b"
+                  animationDelay={1000}
+                >
+                  Shailendra Singh
+                </RoughNotation>{" "}
               </h1>
-              <p class="mt-8 max-w-2xl text-sm tracking-wide text-zinc-400 md:text-base md:leading-loose">
-                I've been obsessed with technology ever since I was a kid. When
-                I wasn't taking apart my family's computer (sorry, mom), I was
-                teaching myself how to code. Fast forward a few years, and now
-                I'm a full-fledged code ninja with an insatiable thirst for
-                creating beautiful websites and functional applications.
+              <p className="mt-8 max-w-2xl text-sm tracking-wide text-zinc-400 md:text-base md:leading-loose">
+                I've been obsessed with{" "}
+                <RoughNotation
+                  type="box"
+                  show
+                  animationDelay={2500}
+                  color="cyan"
+                >
+                  technology
+                </RoughNotation>{" "}
+                18-year-old tech enthusiast, indie hacker, entrepreneur and OSS
+                contributor.
               </p>
             </div>
-            <div class="order-first md:order-last">
+            <div className="order-first md:order-last">
               <Image
-                src={hero}
+                src={profile}
                 alt="heroimage"
                 className="rounded-2xl cursor-pointer"
-                height={200}
-                width={200}
+                height={150}
+                width={150}
+                draggable={false}
               />
-              <div class="mt-2 flex flex-row justify-start space-x-2 md:justify-center">
+              <div className="mt-2 flex flex-row justify-start space-x-2 md:justify-center">
                 <a
                   href="https://twitter.com/mannupaaji"
-                  class="relative text-sm text-zinc-500"
+                  className="relative text-sm text-zinc-500"
                   target="__blank"
                 >
-                  <span class="relative z-10 inline-block px-2 py-2 hover:text-cyan-500">
+                  <span className="relative z-10 inline-block px-2 py-2 hover:text-cyan-500">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
                       stroke-width="0"
                       viewBox="0 0 1024 1024"
-                      class="hover:text-primary h-5 w-5 transition duration-150"
+                      className="hover:text-primary h-5 w-5 transition duration-150"
                       height="1em"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -58,16 +72,16 @@ const Aboutme = () => {
                 </a>
                 <a
                   href="https://www.linkedin.com/in/manuarora28/"
-                  class="relative text-sm text-zinc-500"
+                  className="relative text-sm text-zinc-500"
                   target="__blank"
                 >
-                  <span class="relative z-10 inline-block px-2 py-2 hover:text-cyan-500">
+                  <span className="relative z-10 inline-block px-2 py-2 hover:text-cyan-500">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
                       stroke-width="0"
                       viewBox="0 0 1024 1024"
-                      class="hover:text-primary h-5 w-5 transition duration-150"
+                      className="hover:text-primary h-5 w-5 transition duration-150"
                       height="1em"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -78,16 +92,16 @@ const Aboutme = () => {
                 </a>
                 <a
                   href="https://github.com/manuarora700"
-                  class="relative text-sm text-zinc-500"
+                  className="relative text-sm text-zinc-500"
                   target="__blank"
                 >
-                  <span class="relative z-10 inline-block px-2 py-2 hover:text-cyan-500">
+                  <span className="relative z-10 inline-block px-2 py-2 hover:text-cyan-500">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
                       stroke-width="0"
                       viewBox="0 0 1024 1024"
-                      class="hover:text-primary h-5 w-5 transition duration-150"
+                      className="hover:text-primary h-5 w-5 transition duration-150"
                       height="1em"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -99,12 +113,16 @@ const Aboutme = () => {
               </div>
             </div>
           </div>
-          <p class="mt-8 text-sm tracking-wide text-zinc-400 md:text-base md:leading-loose">
-            I've been obsessed with technology ever since I was a kid. When I
-            wasn't taking apart my family's computer (sorry, mom), I was
-            teaching myself how to code. Fast forward a few years, and now I'm a
-            full-fledged code ninja with an insatiable thirst for creating
-            beautiful websites and functional applications.
+          <p className="mt-8 text-sm tracking-wide text-zinc-400 md:text-base md:leading-loose">
+            I've been obsessed with{" "}
+            <span id="text" className="px-2">
+              technology
+            </span>{" "}
+            ever since I was a kid. When I wasn't taking apart my family's
+            computer (sorry, mom), I was teaching myself how to code. Fast
+            forward a few years, and now I'm a full-fledged code ninja with an
+            insatiable thirst for creating beautiful websites and functional
+            applications.
           </p>
         </div>
       </div>
@@ -118,6 +136,7 @@ export const BackgroundCellAnimation = () => {
       <BackgroundCellCore />
       <Navbar />
       <Aboutme />
+      {/* <LatestBlogs /> */}
     </div>
   );
 };

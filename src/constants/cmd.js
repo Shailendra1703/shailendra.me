@@ -9,8 +9,8 @@ export const actions = [
   },
   {
     name: "Writing",
-    keywords: "writing",
-    href: "/writing",
+    keywords: "blogs",
+    href: "/blogs",
     section: "Navigation",
     color: "#F7D358",
     iconColor: "#673D13",
@@ -62,9 +62,9 @@ export const Navigation = [
     section: "Navigation",
   },
   {
-    name: "Writing",
-    keywords: "writing",
-    href: "/writing",
+    name: "Blogs",
+    keywords: "blogs",
+    href: "/blogs",
     section: "Navigation",
   },
 ];
@@ -82,7 +82,7 @@ export const Socials = [
     name: "Twitter",
     keywords: "twitter",
     perform: () => {
-      window.open("https://twitter.com");
+      window.open("https://x.com/shailendra_1701");
     },
     section: "Socials",
   },
