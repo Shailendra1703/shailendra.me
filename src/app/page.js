@@ -35,6 +35,7 @@ export default function Home() {
     <AnimateEnter>
       <main className="font-Poppins">
         <BackgroundCellAnimation />
+        <LatestBlogs />
       </main>
     </AnimateEnter>
   );

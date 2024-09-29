@@ -136,7 +136,6 @@ export const BackgroundCellAnimation = () => {
       <BackgroundCellCore />
       <Navbar />
       <Aboutme />
-      {/* <LatestBlogs /> */}
     </div>
   );
 };

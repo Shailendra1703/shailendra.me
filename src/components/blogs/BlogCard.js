@@ -15,21 +15,25 @@ export const BlogCard = ({
   badges,
   description,
   iconUrl,
-  readTime,
+  readTime = "5 mins",
   publishedAt,
 }) => {
   return (
     <Link href={href || "#"} className="block cursor-pointer">
-      <Card className="flex bg-background py-4">
+      <Card className="flex bg-background  py-4 border-none ">
         <div className="flex-none">
-          <Avatar className="size-12 m-auto rounded-lg bg-muted-foreground border-2">
-            <AvatarImage src={iconUrl} alt={title} className="object-contain" />
+          <Avatar className="h-12 w-12 m-auto rounded-lg bg-muted-foreground border-2">
+            <AvatarImage
+              src={!iconUrl || "/images/profile.jpg"}
+              alt={title}
+              className="object-contain"
+            />
             <AvatarFallback>{title[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
-          <CardHeader>
-            <div className="flex items-center justify-between gap-x-2 text-base">
+        <div className="flex-grow  items-center flex-col group">
+          <CardHeader className="py-0 px-6">
+            <div className="flex items-center justify-between  text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none md:text-base text-sm">
                 {title}
                 {badges && (
@@ -61,7 +65,7 @@ export const BlogCard = ({
               </div>
             )}
             {description && (
-              <div className="font-sans text-xs md:text-sm mr-10">
+              <div className="font-sans text-xs md:text-sm mr-10 text-slate-500">
                 {description}
               </div>
             )}

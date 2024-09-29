@@ -17,7 +17,7 @@ const navbar = [
   },
 ];
 
-const projects = [
+const PROJECTS = [
   {
     name: "ChatApp",
     year: "2022",
@@ -66,4 +66,4 @@ const projects = [
   },
 ];
 
-export { navbar, projects };
+export { navbar, PROJECTS };
