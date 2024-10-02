@@ -7,7 +7,8 @@ import hero from "../assets/hero.svg";
 import { BackgroundCellAnimation } from "@/components/ui/BackgroundRippleEffect";
 import Works from "@/components/sections/works";
 import LatestBlogs from "@/components/sections/LatestBlogs";
-
+import Projects from "@/components/sections/Projects";
+import Changelog from "@/components/sections/Changelog";
 export function AnimatedPinDemo() {
   return (
     <div className="h-[40rem] w-full flex items-center justify-center ">
@@ -36,6 +37,8 @@ export default function Home() {
       <main className="font-Poppins">
         <BackgroundCellAnimation />
         <LatestBlogs />
+        <Projects />
+        <Changelog />
       </main>
     </AnimateEnter>
   );

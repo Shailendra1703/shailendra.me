@@ -10,7 +10,7 @@ const Projects = () => {
     <AnimateEnter>
       <div>
         <Heading heading="Project" size="lg" />
-        <div className="grid md:grid-cols-3 grid-cols-1 flex-wrap gap-5 md:my-20 my-8">
+        {/* <div className="grid md:grid-cols-3 grid-cols-1 flex-wrap gap-5 md:my-20 my-8">
           {projects.map((project) => {
             return (
               <div className="shadow-md dark:shadow-sm dark:shadow-[#2C2D2D] dark:bg-[#1E1E1F] rounded-md px-5 py-3.5 dark:border-[#2c2c2c] border-1 ">
@@ -39,7 +39,7 @@ const Projects = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </AnimateEnter>
   );
