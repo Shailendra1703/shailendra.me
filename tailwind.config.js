@@ -19,7 +19,8 @@ module.exports = {
     extend: {
       fontFamily: {
         // montserrat: ["Montserrat"],
-        // poppins: ["Poppins"],
+        poppins: ["Poppins"],
+
         kaushan: ["Kaushan Script"],
       },
       colors: {

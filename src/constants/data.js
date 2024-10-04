@@ -1,7 +1,7 @@
 const navbar = [
   {
     name: "About",
-    href: "/",
+    href: "/about",
   },
   {
     name: "Projects",
