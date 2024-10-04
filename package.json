@@ -1,12 +1,12 @@
 {
-  "name": "singhshailendra.me",
+  "name": "singhshailendra.in",
   "version": "0.1.0",
   "private": true,
   "author": {
     "name": "Shailendra Singh",
-    "url": "https://singhshailendra.me"
+    "url": "https://singhshailendra.in"
   },
-  "homepage": "https://singhshailendra.me",
+  "homepage": "https://singhshailendra.in",
   "keywords": [
     "tailwindcss",
     "template",

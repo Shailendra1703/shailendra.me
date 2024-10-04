@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -17,6 +17,11 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        // montserrat: ["Montserrat"],
+        // poppins: ["Poppins"],
+        kaushan: ["Kaushan Script"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -66,12 +71,50 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        img: {
+          from: { transform: "scale(2)", filter: "blur(10px)" },
+          to: { transform: "scale(1)", filter: "blur(0px)" },
+        },
+        marker: {
+          "0%": {
+            transform: "translate(-50%, -50%) scale(1)",
+            opacity: "1",
+          },
+          "35%": {
+            transform: "translate(-50%, -50%) scale(6)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translate(-50%, -50%) scale(6)",
+            opacity: "0",
+          },
+        },
+        intro: {
+          "0%": {
+            transform: "translateY(10px)",
+            opacity: "0",
+            filter: "blur(5px)",
+          },
+          "95%": {
+            transform: "translateY(-1px)",
+            opacity: "1",
+            filter: "blur(0px)",
+          },
+          "100%": {
+            transform: "translateY(0px)",
+            opacity: "1",
+            filter: "blur(0px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        img: "img 1s ease-in-out",
+        intro: "intro 0.3s forwards ease-in-out",
+        marker: "marker 4s ease-out infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

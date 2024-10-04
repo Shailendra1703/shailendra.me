@@ -7,11 +7,11 @@ import { RoughNotation } from "react-rough-notation";
 import profile from "../../assets/profile.jpg";
 import Image from "next/image";
 import LatestBlogs from "../sections/LatestBlogs";
-
+import { DATA } from "@/constants/aboutme.config";
 const Aboutme = () => {
   return (
     <>
-      <div className="absolute inset-0 flex mt-52">
+      <div className="absolute inset-0 flex mt-52 ">
         <div className="relative z-40 mx-auto  max-w-[52rem] ">
           <div className="flex flex-col justify-between space-y-10  md:flex-row md:space-x-10 md:space-y-0">
             <div>
@@ -51,7 +51,7 @@ const Aboutme = () => {
               />
               <div className="mt-2 flex flex-row justify-start space-x-2 md:justify-center">
                 <a
-                  href="https://twitter.com/mannupaaji"
+                  href={DATA.twitter}
                   className="relative text-sm text-zinc-500"
                   target="__blank"
                 >
@@ -71,7 +71,7 @@ const Aboutme = () => {
                   </span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/manuarora28/"
+                  href={DATA.linkedin}
                   className="relative text-sm text-zinc-500"
                   target="__blank"
                 >
@@ -91,7 +91,7 @@ const Aboutme = () => {
                   </span>
                 </a>
                 <a
-                  href="https://github.com/manuarora700"
+                  href={DATA.github}
                   className="relative text-sm text-zinc-500"
                   target="__blank"
                 >

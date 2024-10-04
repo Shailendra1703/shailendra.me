@@ -9,7 +9,7 @@ import AnimateEnter from "@/components/ui/AnimateEnter";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  authors: [{ name: "Shailendra Singh", url: "https://singhshailendra.me" }],
+  authors: [{ name: "Shailendra Singh", url: "https://singhshailendra.in" }],
   category: "developer",
   creator: "Shailendra Singh",
   description: "software developer",
@@ -21,7 +21,7 @@ export const metadata = {
     "notion",
     "notionstyle",
     "illustration",
-    "singhshailendra.me",
+    "singhshailendra.in",
     "India",
     "Next.js",
     "React",
@@ -57,6 +57,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="shortcut icon" href="/images/profile.jpg" />
       <body className="bg-white dark:bg-slate-950">
         <Providers>
           <AnimateEnter>

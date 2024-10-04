@@ -1,16 +1,15 @@
 import Header from "@components/blogs/Header";
 import Main from "@components/blogs/Main";
-import { Metadata } from "next";
 
 export const metadata = {
-  title: "Writing",
+  title: "Blogs",
   description: "Infrequent posts about design and tech",
   openGraph: {
-    title: "Writing",
+    title: "Blogs",
     description: "Infrequent posts about design and tech",
     images: [
       {
-        url: "https://harshsingh.xyz/og?title=Writing",
+        url: "https://singhshailendra.in/og?title=blogs",
         width: 1200,
         height: 630,
         alt: "",
@@ -22,14 +21,14 @@ export const metadata = {
     description: "Infrequent posts about design and tech",
     images: [
       {
-        url: "https://harshsingh.xyz/og?title=Writing",
+        url: "https://singhshailendra.in/og?title=blogs",
         width: 1200,
         height: 630,
         alt: "",
       },
     ],
   },
-  alternates: { canonical: "https://harshsingh.xyz/writing" },
+  alternates: { canonical: "https://singhshailendra.in/blogs" },
 };
 
 export default () => (

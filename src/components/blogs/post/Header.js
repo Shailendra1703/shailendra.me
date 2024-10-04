@@ -29,7 +29,7 @@ export const Copy = ({ slug }) => {
   const [hover, setHover] = useState(false);
 
   const onClick = () => {
-    navigator.clipboard.writeText(`https://harshsingh.xyz/${slug}`);
+    navigator.clipboard.writeText(`https://singhshailendra.in/${slug}`);
     setCopy(true);
   };
 

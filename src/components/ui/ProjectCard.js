@@ -97,7 +97,7 @@ export function ProjectCard({
         )}
       </CardContent>
       <CardFooter className="px-2 pb-2">
-        {links && links.length > 0 && (
+        {/* {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
               <Link href={link?.href || ""} key={idx} target="_blank">
@@ -111,7 +111,7 @@ export function ProjectCard({
               </Link>
             ))}
           </div>
-        )}
+        )} */}
         {archived && (
           <Badge
             variant="destructive"

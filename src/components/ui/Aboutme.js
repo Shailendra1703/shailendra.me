@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import hero from "../../assets/hero.svg";
 import Heading from "@/utils/Heading";
-import { aboutme } from "@/constants/aboutme";
+// import { aboutme } from "@/constants/aboutme";
 const Aboutme = () => {
   return (
     <div className="px-8 lg:px-0 max-w-6xl mx-auto">

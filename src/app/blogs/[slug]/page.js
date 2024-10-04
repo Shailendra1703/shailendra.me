@@ -23,7 +23,7 @@ export const generateMetadata = ({ params }) => {
   } = post.metadata;
   const ogImage = image
     ? image
-    : `https://harshsingh.xyz/og?title=${encodeURIComponent(title)}`;
+    : `https://singhshailendra.in/og?title=${encodeURIComponent(title)}`;
 
   return {
     title,
@@ -33,9 +33,9 @@ export const generateMetadata = ({ params }) => {
       description,
       type: "article",
       publishedTime,
-      url: `https://harshsingh.xyz/writing/${post.slug}`,
+      url: `https://singhshailendra.in/writing/${post.slug}`,
       images: [{ url: ogImage }],
-      author: "Harsh Singh",
+      author: "Shailendra Singh",
     },
     twitter: {
       card: "summary_large_image",
@@ -43,7 +43,7 @@ export const generateMetadata = ({ params }) => {
       description,
       images: [ogImage],
     },
-    alternates: { canonical: `https://harshsingh.xyz/writing/${post.slug}` },
+    alternates: { canonical: `https://singhshailendra.in/blogs/${post.slug}` },
   };
 };
 
@@ -52,7 +52,7 @@ export default ({ params }) => {
   if (!post) notFound();
 
   return (
-    <section className="max-w-4xl mx-auto my-20">
+    <section className="max-w-3xl mx-auto my-20">
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -65,10 +65,10 @@ export default ({ params }) => {
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `https://harshsingh.xyz${post.metadata.image}`
+              ? `https://singhshailendra.in${post.metadata.image}`
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-            url: `https://harshsingh.xyz/writing/${post.slug}`,
-            author: { "@type": "Person", name: "Harsh Singh" },
+            url: `https://singhshailendra.in/blogs/${post.slug}`,
+            author: { "@type": "Person", name: "Shailendra Singh" },
           }),
         }}
       />
