@@ -1,6 +1,7 @@
 import Link from "next/link";
 import getPosts from "../../app/blogs/post";
 import Image from "next/image";
+import { BlogCard } from "./BlogCard";
 
 export const format = (date) => {
   const [year, month, day] = date.split("-");
@@ -11,45 +12,28 @@ export default () => {
   const posts = getPosts();
 
   return (
-    <main className=" flex flex-col gap-y-4 md">
-      {posts
-        .sort((a, b) => {
-          if (
-            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+    <section id="blogs" className="">
+      <main className="flex flex-col divide-y divide-dashed flex-1 ">
+        {posts
+          .sort(
+            (a, b) =>
+              new Date(b.metadata.publishedAt).getTime() -
+              new Date(a.metadata.publishedAt).getTime()
           )
-            return -1;
-          return 1;
-        })
-        .map((post) => (
-          <Link
-            key={post.slug}
-            className="exclude group"
-            href={`/blogs/${post.slug}`}
-          >
-            <div className="flex items-start  gap-x-4 animate-intro">
-              <Image
-                src={post.metadata.image}
-                alt={post.metadata.title}
-                width="80"
-                height="80"
-                className="rounded-lg"
+          .map((post) => (
+            <Link key={post.slug} href={`/blogs/${post.slug}`}>
+              <BlogCard
+                href={`/blogs/${post.slug}`}
+                title={post.metadata.title}
+                description={post.metadata.summary}
+                publishedAt={post.metadata.publishedAt}
+                iconUrl={post.metadata.image}
+                readTime={post.metadata.readTime}
+                key={post.slug}
               />
-              <div className="flex items-end justify-between animate-intro">
-                <div>
-                  <h3 className="flex items-center tracking-tight underline decoration-neutral-300 transition-colors group-hover:decoration-neutral-500">
-                    {post.metadata.title}
-                  </h3>
-                  <span className="mt-1 text-sm tracking-tight text-neutral-500">
-                    {post.metadata.summary}
-                  </span>
-                </div>
-              </div>
-              <span className="text-sm tracking-tight text-neutral-500">
-                {format(post.metadata.publishedAt)}
-              </span>
-            </div>
-          </Link>
-        ))}
-    </main>
+            </Link>
+          ))}
+      </main>
+    </section>
   );
 };

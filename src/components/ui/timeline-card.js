@@ -25,7 +25,7 @@ export function TimeLineCard({
         )}
         <h2 className="font-semibold leading-none">{title}</h2>
         {role && (
-          <Badge variant="secondary" className="w-fit text-xs">
+          <Badge variant="secondary" className="w-fit text-xs font-light py-1">
             {role}
           </Badge>
         )}

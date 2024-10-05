@@ -1,48 +1,114 @@
+import BlurFade from "@/components/magicui/blur-fade";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import { PROJECTS } from "@/constants/projects.config";
 import React from "react";
-import { projects } from "@/constants/data";
-import AnimateEnter from "@/components/ui/AnimateEnter";
-import ExternalLinks from "@/utils/ExternalLinks";
-import Heading from "@/utils/Heading";
-import { AnimatedPinDemo } from "../page";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
+import { FREELANCE_PROJECTS } from "@/constants/projects.config";
+import { TimeLineCard } from "@/components/ui/timeline-card";
+const BLUR_FADE_DELAY = 0.04;
 
-const Projects = () => {
+export default function Projects() {
   return (
-    <AnimateEnter>
-      <div>
-        <Heading heading="Project" size="lg" />
-        {/* <div className="grid md:grid-cols-3 grid-cols-1 flex-wrap gap-5 md:my-20 my-8">
-          {projects.map((project) => {
-            return (
-              <div className="shadow-md dark:shadow-sm dark:shadow-[#2C2D2D] dark:bg-[#1E1E1F] rounded-md px-5 py-3.5 dark:border-[#2c2c2c] border-1 ">
-                <p className="text-sm  font-semibold dark:text-[#DACD5D]">
-                  {project.year}
-                </p>
-                <h3 className="font-bold text-md py-1 hover:underline cursor-pointer">
-                  {project.name}
-                </h3>
-                <p className="text-md py-1 dark:text-[#777576] text-[16px] leading-5">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap ">
-                  {project.source.map((link) => {
-                    return (
-                      <ExternalLinks
-                        href={link}
-                        underline={false}
-                        className="px-3 py-1 rounded-md shadow-sm cursor-pointer border my-2"
+    <div className="flex flex-col min-h-[100dvh] max-w-3xl my-20 mx-auto px-5">
+      <section id="projects">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <Tabs
+            defaultValue="myworks"
+            className="flex flex-col items-center justify-center w-full"
+          >
+            <TabsList className="grid w-[400px] grid-cols-2 mb-4">
+              <TabsTrigger value="myworks">My Works</TabsTrigger>
+              <TabsTrigger value="clientworks">Freelance Works</TabsTrigger>
+            </TabsList>
+            <TabsContent value="myworks">
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <div className="space-y-12 w-full">
+                  <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div className="space-y-2">
+                      <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">
+                        Some cool stuff I&apos;ve built
+                      </h2>
+                      <p className="text-muted-foreground md:text-xl/relaxed lg:text-lg/relaxed xl:text-base/relaxed px-5">
+                        I&apos;ve worked on a variety of projects, from simple
+                        websites to complex web applications. Here are all of
+                        them.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+                    {PROJECTS.map((project, id) => (
+                      <BlurFade
+                        key={project.title}
+                        delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                       >
-                        Source
-                      </ExternalLinks>
-                    );
-                  })}
+                        <ProjectCard
+                          href={project.href}
+                          active={project.active}
+                          archived={project.archived}
+                          key={project.title}
+                          title={project.title}
+                          description={project.description}
+                          dates={project.dates}
+                          tags={project.technologies}
+                          image={project.image}
+                          video={project.video}
+                          links={project.links}
+                        />
+                      </BlurFade>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div> */}
-      </div>
-    </AnimateEnter>
+              </BlurFade>
+            </TabsContent>
+            <TabsContent value="clientworks">
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <div className="space-y-12 w-full">
+                  <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div className="space-y-2">
+                      <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl mt-2">
+                        Your ideas & my skills
+                      </h2>
+                      <p className="text-muted-foreground md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed px-5">
+                        These projects showcase my client work across various
+                        industries. If my skills align with your needs,
+                        let&apos;s connect.
+                      </p>
+                    </div>
+                  </div>
+                  <section id="freelance-projects">
+                    <div className="flex min-h-0 flex-col gap-y-3">
+                      <BlurFade delay={BLUR_FADE_DELAY * 5}>
+                        <h2 className="text-xl font-bold">Freelance Work</h2>
+                      </BlurFade>
+                      <BlurFade delay={BLUR_FADE_DELAY * 14}>
+                        <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+                          {FREELANCE_PROJECTS.map((project, id) => (
+                            <BlurFade
+                              key={project.title + project.dates}
+                              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+                            >
+                              <TimeLineCard
+                                title={project.title}
+                                role={project.role}
+                                description={project.description}
+                                location={project.location}
+                                dates={project.dates}
+                                image={project.image}
+                                links={project.links}
+                              />
+                            </BlurFade>
+                          ))}
+                        </ul>
+                      </BlurFade>
+                    </div>
+                  </section>
+                </div>
+              </BlurFade>
+            </TabsContent>
+          </Tabs>
+        </BlurFade>
+      </section>
+    </div>
   );
-};
-
-export default Projects;
+}

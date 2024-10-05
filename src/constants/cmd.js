@@ -26,7 +26,7 @@ export const actions = [
   {
     name: "Twitter",
     keywords: "twitter",
-    href: "https://twitter.com/Shailen02159112",
+    href: "https://x.com/shailendra_1701",
     section: "Socials",
     color: "#63C7FA",
     iconColor: "#102E62",

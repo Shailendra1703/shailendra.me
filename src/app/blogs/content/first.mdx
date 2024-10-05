@@ -13,9 +13,18 @@ image: "/images/profile.jpg"
 Here's some text.
 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
+![quote](/images/quote.jpg)
+
 ```js
 const hello = 'world';
 const sum = 1 + 2;
 console.log('Hello, world!');
 ```
 
+## code with jsx
+
+```jsx
+import { highlight } from 'sugar-high'
+const html = highlight(code)
+document.querySelector('pre > code').innerHTML = html
+```

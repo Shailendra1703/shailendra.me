@@ -1,7 +1,7 @@
 import { createElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import { highlight } from "sugar-high";
 import CodeBlock from "./Codeblock";
 
@@ -28,11 +28,12 @@ const CustomLink = (props) => {
 };
 
 const Img = (props) => {
-  return <Image {...props} className="rounded-lg" />;
+  return <Image className="rounded-lg" {...props} />;
 };
 
 const Code = ({ children, ...props }) => {
   const codeHTML = highlight(children);
+
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
 };
 
@@ -63,9 +64,10 @@ const components = {
   h2: createHeading(2),
   h3: createHeading(3),
   h4: createHeading(4),
-  Image: Img,
+  h5: createHeading(5),
+  h6: createHeading(6),
   a: CustomLink,
-  code: CodeBlock,
+  code: Code, //TODO custom highlights for code
 };
 
 export default (props) => (
