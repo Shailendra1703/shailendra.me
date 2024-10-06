@@ -32,7 +32,7 @@ export const BlogCard = ({
           </Avatar>
         </div>
         <div className="flex-grow  items-center flex-col group">
-          <CardHeader className="py-0 px-6">
+          <CardHeader className="py-0 md:px-6 px-2">
             <div className="flex items-center justify-between  text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none md:text-base text-sm">
                 {title}

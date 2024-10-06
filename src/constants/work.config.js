@@ -2,45 +2,43 @@ import { ExternalLink, Link } from "lucide-react";
 
 export const WORK = [
   {
-    title: "Ellenox",
-    role: "Community Engagement Intern",
+    title: "Comming soon",
+    role: "Comming soon",
     dates: "Apr - Jun, 2024",
-    location: "Remote, Hydrabad (India)",
-    description:
-      "I managed hackathons and tech support for the Ellenox community. I also managed the Ellenox Discord server of 2000+ members.",
+    location: "Remote",
+    description: "Comming soon",
     image: "/images/profile.jpg",
-    mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+    mlh: "#",
     links: [
       {
         title: "Website",
-        href: "https://www.ellenox.com/",
+        href: "#",
         icon: <Link className="size-3" />,
       },
       {
         title: "Proof",
-        href: "https://dub.sh/saidev-linkedin",
+        href: "#",
         icon: <ExternalLink className="size-3" />,
       },
     ],
   },
   {
-    title: "Ellenox",
-    role: "Community Engagement Intern",
+    title: "Comming soon",
+    role: "Comming soon",
     dates: "Apr - Jun, 2024",
-    location: "Remote, Hydrabad (India)",
-    description:
-      "I managed hackathons and tech support for the Ellenox community. I also managed the Ellenox Discord server of 2000+ members.",
+    location: "Remote",
+    description: "Comming soon",
     image: "/images/profile.jpg",
-    mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+    mlh: "#",
     links: [
       {
         title: "Website",
-        href: "https://www.ellenox.com/",
+        href: "#",
         icon: <Link className="size-3" />,
       },
       {
         title: "Proof",
-        href: "https://dub.sh/saidev-linkedin",
+        href: "#",
         icon: <ExternalLink className="size-3" />,
       },
     ],

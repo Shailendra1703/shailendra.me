@@ -8,7 +8,7 @@ const Navbar = () => {
       className="fixed w-[100vw] font-poppins text-white"
       style={{ zIndex: 100 }}
     >
-      <nav className="flex flex-row lg:-translate-x-2  justify-between max-w-4xl mx-auto py-3 px-4 border border-slate-300 border-opacity-30 rounded-md my-4 backdrop-filter backdrop-blur-lg">
+      <nav className="flex flex-row lg:-translate-x-2  justify-between max-w-4xl md:mx-auto py-3 px-4 border border-slate-300 border-opacity-30 rounded-md my-4 backdrop-filter backdrop-blur-lg mx-4">
         <Link
           href="/"
           className="font-poppins text-xl font-semibold flex items-center"

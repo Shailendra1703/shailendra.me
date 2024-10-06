@@ -8,10 +8,11 @@ import profile from "../../assets/profile.jpg";
 import Image from "next/image";
 import LatestBlogs from "../sections/LatestBlogs";
 import { DATA } from "@/constants/aboutme.config";
+import Link from "next/link";
 const Aboutme = () => {
   return (
     <>
-      <div className="absolute inset-0 flex mt-52 ">
+      <div className="absolute inset-0 flex md:mt-52 mt-28 mx-4 md:mx-8 lg:mx-0 ">
         <div className="relative z-40 mx-auto  max-w-[52rem] ">
           <div className="flex flex-col justify-between space-y-10  md:flex-row md:space-x-10 md:space-y-0">
             <div>
@@ -36,7 +37,7 @@ const Aboutme = () => {
                 >
                   technology
                 </RoughNotation>{" "}
-                18-year-old tech enthusiast, indie hacker, entrepreneur and OSS
+                21-year-old tech enthusiast, indie hacker, entrepreneur and OSS
                 contributor.
               </p>
             </div>
@@ -44,7 +45,7 @@ const Aboutme = () => {
               <Image
                 src={profile}
                 alt="heroimage"
-                className="rounded-2xl cursor-pointer"
+                className="rounded-2xl cursor-pointer h-32 w-32 md:h-36 md:w-36"
                 height={150}
                 width={150}
                 draggable={false}
@@ -122,7 +123,10 @@ const Aboutme = () => {
             computer (sorry, mom), I was teaching myself how to code. Fast
             forward a few years, and now I'm a full-fledged code ninja with an
             insatiable thirst for creating beautiful websites and functional
-            applications.
+            applications.{" "}
+            <Link href="/about">
+              <span className="text-blue-600">Read more</span>
+            </Link>
           </p>
         </div>
       </div>

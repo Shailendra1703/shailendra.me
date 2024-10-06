@@ -3,7 +3,7 @@
 :root {
   --sh-class: #4d9ef6; /* Brighter blue for class */
   --sh-identifier: #6caedd; /* Lighter blue for identifiers */
-  --sh-sign: #0059ff; /* Lighter gray to ensure signs are visible */
+  --sh-sign: #cdd3de; /* Lighter gray to ensure signs are visible */
   --sh-property: #3182ce; /* Brighter blue for properties */
   --sh-entity: #2db1bc; /* Lighter teal for entities */
   --sh-jsxliterals: #939dfd; /* Lighter purple for JSX literals */

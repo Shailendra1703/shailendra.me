@@ -24,7 +24,7 @@ const LatestBlogs = () => {
   }, [posts]);
 
   return (
-    <div className="max-w-3xl  mx-auto md:my-8 xl:my-10">
+    <div className="max-w-3xl  lg:mx-auto md:my-8 xl:my-10 mx-4 md:mx-8 ">
       <div className="flex flex-col items-center justify-center space-y-4 text-center  ">
         <div className="space-y-2">
           <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm font-semibold">

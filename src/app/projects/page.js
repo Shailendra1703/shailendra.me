@@ -6,18 +6,24 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { FREELANCE_PROJECTS } from "@/constants/projects.config";
 import { TimeLineCard } from "@/components/ui/timeline-card";
+import { FiCornerUpLeft } from "react-icons/fi";
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Projects() {
   return (
-    <div className="flex flex-col min-h-[100dvh] max-w-3xl my-20 mx-auto px-5">
+    <div className="flex flex-col min-h-[100dvh] max-w-3xl my-20 lg:mx-auto px-5">
+      <Link href="/" className="exclude flex h-8 items-center text-neutral-500">
+        <FiCornerUpLeft className="h-4 w-4" />
+        <span className="ml-1.5 text-sm">Home</span>
+      </Link>
       <section id="projects">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <Tabs
             defaultValue="myworks"
             className="flex flex-col items-center justify-center w-full"
           >
-            <TabsList className="grid w-[400px] grid-cols-2 mb-4">
+            <TabsList className="grid md:w-[400px] w-[350px] grid-cols-2 my-4">
               <TabsTrigger value="myworks">My Works</TabsTrigger>
               <TabsTrigger value="clientworks">Freelance Works</TabsTrigger>
             </TabsList>

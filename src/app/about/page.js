@@ -9,12 +9,18 @@ import { WORK } from "@/constants/work.config";
 import Image from "next/image";
 import React from "react";
 import Markdown from "react-markdown";
+import Link from "next/link";
+import { FiCornerUpLeft } from "react-icons/fi";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function About() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-3xl mx-auto my-20">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-3xl md:mx-auto my-20 font-poppins mx-4">
+      <Link href="/" className="exclude flex h-8 items-center text-neutral-500">
+        <FiCornerUpLeft className="h-4 w-4" />
+        <span className="ml-1.5 text-sm">Home</span>
+      </Link>
       <section id="quote">
         <BlurFadeText
           delay={BLUR_FADE_DELAY}
@@ -30,7 +36,7 @@ export default function About() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <Image
-            src="/images/quote.jpg"
+            src="/images/about.jpeg"
             alt="quote"
             width={1920}
             height={1080}
@@ -43,7 +49,7 @@ export default function About() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-poppins text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-poppins text-sm dark:prose-invert">
             {DATA.about}
           </Markdown>
         </BlurFade>
@@ -53,7 +59,7 @@ export default function About() {
           <h2 className="text-xl font-bold">Career</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-poppins text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-poppins text-sm dark:prose-invert">
             {DATA.careerFull}
           </Markdown>
         </BlurFade>

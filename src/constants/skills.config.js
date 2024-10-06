@@ -17,7 +17,7 @@ export const SKILLS = [
   },
   {
     category: "Backend",
-    technologies: ["Hono.js", "Express.js", "Flask", "Next.js"],
+    technologies: ["Hono.js", "Express.js", "Django", "Next.js"],
   },
   {
     category: "Mobile",
@@ -29,23 +29,19 @@ export const SKILLS = [
       "RN Gesture Handler",
     ],
   },
-  // {
-  //   category: "Web3",
-  //   technologies: [
-  //     "Solana",
-  //     "Anchor",
-  //     "Solana Wallet Provider",
-  //     "Solana Mobile Wallet Provider",
-  //     "Ethereum",
-  //     "Web3.js",
-  //   ],
-  // },
+  {
+    category: "Web3",
+    technologies: [
+      "Solana",
+      "Anchor",
+      "Solana Wallet Provider",
+      "Solana Mobile Wallet Provider",
+      "Ethereum",
+      "Web3.js",
+    ],
+  },
   {
     category: "Firmware",
     technologies: ["C++", "Python", "Micropython"],
-  },
-  {
-    category: "Hardware",
-    technologies: ["ESP32", "ESP8266"],
   },
 ];

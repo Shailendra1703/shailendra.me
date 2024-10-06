@@ -32,7 +32,7 @@ export const metadata = {
 };
 
 export default () => (
-  <section className="max-w-3xl mx-auto my-20">
+  <section className="max-w-3xl md:mx-auto my-20 mx-4 ">
     <Header />
     <Main />
   </section>

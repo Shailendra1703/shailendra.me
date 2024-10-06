@@ -1,4 +1,6 @@
 import { PiBooksFill } from "react-icons/pi";
+import { FiCornerUpLeft } from "react-icons/fi";
+import Link from "next/link";
 
 export default () => (
   <header>
@@ -8,7 +10,11 @@ export default () => (
       </div>
     </div>
     <div className="mt-6">
-      <h1 className="animate-intro font-medium tracking-tight opacity-0">
+      <Link href="/" className="exclude flex h-8 items-center text-neutral-500">
+        <FiCornerUpLeft className="h-4 w-4" />
+        <span className="ml-1.5 text-sm">Home</span>
+      </Link>
+      <h1 className="animate-intro font-medium tracking-tight opacity-0 mt-3 text-xl">
         Blogs
       </h1>
       <h2 className="animate-intro tracking-tight opacity-0 [animation-delay:100ms]">

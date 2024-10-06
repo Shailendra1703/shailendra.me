@@ -6,7 +6,7 @@ import { ProjectCard } from "../ui/ProjectCard";
 const Projects = () => {
   return (
     <section id="projects" className="py-20">
-      <div className="max-w-3xl  mx-auto md:my-8 xl:my-10">
+      <div className="max-w-3xl  md:mx-auto md:my-8 xl:my-10 mx-4 ">
         <div className="flex flex-col items-center justify-center space-y-4 text-center  ">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm font-semibold">
