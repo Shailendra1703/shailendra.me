@@ -16,11 +16,11 @@ const Changelog = () => {
           </p>
         </div>
       </div>
-      <div className="divide-zinc-800  divide-dashed  relative">
+      <div className="divide-zinc-800    relative">
         <div className="absolute h-full w-[4px] bg-gradient-to-b from-transparent via-cyan-500 to:transparent -left-4 md:-left-10"></div>
         {CHANGELOG.map((yearData, index) => (
-          <div key={index} className="border-b border-zinc-800">
-            <h1 className="text-xl font-bold text-zinc-200 my-8 relative">
+          <div key={index} className="border-b border-zinc-800 border-dashed">
+            <h1 className="text-xl font-bold  my-8 relative">
               <div className="h-3 md:h-4 w-3 md:w-4 border-2 border-cyan-500 bg-zinc-800 rounded-full absolute -left-[10px] md:-left-[46px] top-2 md:top-1"></div>
               {yearData.year}
             </h1>

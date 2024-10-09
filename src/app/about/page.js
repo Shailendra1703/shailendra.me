@@ -26,7 +26,7 @@ export default function About() {
           delay={BLUR_FADE_DELAY}
           className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
           yOffset={8}
-          text={`FYI, I'm ${DATA.name} 👋`}
+          text={`FYI, I'm ${DATA.name}👋`}
         />
         <BlurFade delay={BLUR_FADE_DELAY * 2}>
           <p className="text-lg text-muted-foreground my-6">
