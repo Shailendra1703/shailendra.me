@@ -14,7 +14,12 @@ export const PROJECTS = [
       {
         type: "Website",
         href: "https://shailendra1703.github.io/Array-Sorting-Visualizer/",
-        icon: <Icons.globe className="size-3" />,
+        icon: <Icons.globe className="h-3 w-3" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/Shailendra1703/Array-Sorting-Visualizer",
+        icon: <Icons.github className="h-3 w-3" />,
       },
     ],
     image: "/projects/array.png",
@@ -32,12 +37,12 @@ export const PROJECTS = [
       {
         type: "Website",
         href: "https://github.com/Shailendra1703/kurma",
-        icon: <Icons.globe className="size-3" />,
+        icon: <Icons.globe className="h-3 w-3" />,
       },
       {
         type: "Source",
         href: "https://github.com/Shailendra1703/kurma",
-        icon: <Icons.github className="size-3" />,
+        icon: <Icons.github className="h-3 w-3" />,
       },
     ],
     image: "/projects/kurma.png",
@@ -47,45 +52,89 @@ export const PROJECTS = [
 
 export const FREELANCE_PROJECTS = [
   {
-    title: "Comming soon",
-    role: "Comming soon",
-    dates: "Apr - Jun, 2024",
+    title: "Crownworld",
+    role: "Developer",
+    dates: "2023",
     location: "Remote",
-    description: "Comming soon",
-    image: "/images/profile.jpg",
+    description: "ReactJS website Styled with Material UI",
+    image: "/images/professional/crownworld.jpeg",
     mlh: "#",
     links: [
       {
         title: "Website",
-        href: "#",
-        icon: <Link className="size-3" />,
+        href: "https://crownworld.io",
+        icon: <Link className="h-3 w-3" />,
       },
-      {
-        title: "Proof",
-        href: "#",
-        icon: <ExternalLink className="size-3" />,
-      },
+      // {
+      //   title: "Proof",
+      //   href: "#",
+      //   icon: <ExternalLink className="h-3 w-3" />,
+      // },
     ],
   },
   {
-    title: "Comming soon",
-    role: "Comming soon",
-    dates: "Apr - Jun, 2024",
+    title: "HeyStack",
+    role: "Developer",
+    dates: "2023",
     location: "Remote",
-    description: "Comming soon",
-    image: "/images/profile.jpg",
+    description:
+      "NextJS website styled with tailwindcss with a complete blog section powered by headless CMS and deployed it on AWS lightsail",
+    image: "/images/professional/heyStack.jpeg",
     mlh: "#",
     links: [
       {
         title: "Website",
-        href: "#",
-        icon: <Link className="size-3" />,
+        href: "https://hey-stack.netlify.app",
+        icon: <Link className="h-3 w-3" />,
       },
+      // {
+      //   title: "Proof",
+      //   href: "#",
+      //   icon: <ExternalLink className="h-3 w-3" />,
+      // },
+    ],
+  },
+  {
+    title: "Bitcoinverse",
+    role: "Developer & Project Manager",
+    dates: "2023",
+    location: "Remote",
+    description:
+      "ReactJS crypto launchpad website with mint,swap, staking features",
+    image: "/images/professional/bitcoinverse.jpg",
+    mlh: "#",
+    links: [
       {
-        title: "Proof",
-        href: "#",
-        icon: <ExternalLink className="size-3" />,
+        title: "Website",
+        href: "https://bitcoinverse.tech/",
+        icon: <Link className="h-3 w-3" />,
       },
+      // {
+      //   title: "Proof",
+      //   href: "#",
+      //   icon: <ExternalLink className="h-3 w-3" />,
+      // },
+    ],
+  },
+  {
+    title: "Bogdanoff",
+    role: "Developer",
+    dates: "2024",
+    location: "Remote",
+    description: "ReactJS memecoin website for $BOG token",
+    image: "#",
+    mlh: "#",
+    links: [
+      {
+        title: "Website",
+        href: "https://bogdanoff.xyz/",
+        icon: <Link className="h-3 w-3" />,
+      },
+      // {
+      //   title: "Proof",
+      //   href: "#",
+      //   icon: <ExternalLink className="h-3 w-3" />,
+      // },
     ],
   },
 ];

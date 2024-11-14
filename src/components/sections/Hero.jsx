@@ -23,17 +23,8 @@ const Hero = () => {
                 </RoughNotation>{" "}
               </h1>
               <p className="mt-8 max-w-2xl text-sm tracking-wide text-muted-foreground md:text-base md:leading-loose">
-                I've been obsessed with{" "}
-                <RoughNotation
-                  type="box"
-                  show
-                  animationDelay={2500}
-                  color="cyan"
-                >
-                  technology
-                </RoughNotation>{" "}
-                21-year-old tech enthusiast, indie hacker, entrepreneur and OSS
-                contributor.
+                I like building things, mostly with code. I'm a web developer
+                with a keen intrest in Cyber Security as well, Nice to meet you!
               </p>
             </div>
             <div className="order-first md:order-last">
