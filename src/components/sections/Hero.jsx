@@ -101,15 +101,20 @@ const Hero = () => {
             </div>
           </div>
           <p className="mt-8 text-sm tracking-wide  md:text-base md:leading-loose">
-            I've been obsessed with{" "}
-            <span id="text" className="px-2">
-              technology
+            I'm highly experienced in React.js and Next.js. I’ve successfully
+            delivered 11+ freelancing projects and provided over 200 hours of
+            dedicated support to clients. Beyond development, I’m deeply
+            passionate about system design and cybersecurity, and I like reading
+            blogs and playing chess. Let's
+            <span className="text-blue-600">
+              <RoughNotation type="box" show color="cyan">
+                {" "}
+                <Link href="https://cal.com/shailendra1703" target="_blank">
+                  connect
+                </Link>
+              </RoughNotation>
             </span>{" "}
-            ever since I was a kid. When I wasn't taking apart my family's
-            computer (sorry, mom), I was teaching myself how to code. Fast
-            forward a few years, and now I'm a full-fledged code ninja with an
-            insatiable thirst for creating beautiful websites and functional
-            applications.{" "}
+            if you want to bring your MVP idea to life.{" "}
             <Link href="/about">
               <span className="text-blue-600">Read more</span>
             </Link>

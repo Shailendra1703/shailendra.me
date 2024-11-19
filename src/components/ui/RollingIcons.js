@@ -176,11 +176,6 @@ const RollingIcons = () => {
                         className={`h-6 w-6 text-[${action.iconColor}]`}
                       />
                     )}
-                    {action.keywords === "system" && (
-                      <ComputerDesktopIcon
-                        className={`h-6 w-6 text-[${action.iconColor}]`}
-                      />
-                    )}
                   </Compute>
                 </motion.div>
               );

@@ -1,35 +1,67 @@
 ---
 title: "How to create a CI/CD pipeline with GitHub Actions for Hostinger"
 publishedAt: "2024-06-18"
-summary: "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+summary: "In this tutorial, we will learn how to create a CI/CD pipeline with GitHub Actions for Hostinger to deploy NextJs application."
 readingTime: "5 min"
 tags: ["CI/CD", "GitHub Actions", "Hostinger"]
 icon: "/vercel.svg"
-image: "/images/profile.jpg"
+image: "/images/quote.jpg"
 ---
 
 # My Blog Post
 
-Here's some text.
-lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
 ![quote](/images/quote.jpg)
 
-```javascript:highlight={2,4-6}
-const hello = 'world';
-const sum = 1 + 2;
-console.log('Hello, world!');
-```
+```yml
+name: Deploy a ReactJS website automatically to hostinger
 
-## code with jsx
+on:
+  push:
+    branches:
+      - master
+env:
+  CI: false
 
-```jsx:highlight={2,4-6}
-import { highlight } from 'sugar-high'
-import { useEffect } from 'react'
-const html = highlight(code)
-document.querySelector('pre > code').innerHTML = html
+permissions:
+  contents: write
 
-useEffect(() => {
-  console.log('Hello, world!');
-}, []);
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    name: Build and Push
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20"
+
+      - name: Install all dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Check if branch exists
+        id: checkbranch
+        run: |
+          BRANCH_EXIST=$(git ls-remote --heads origin build | wc -l)
+          echo "BRANCH_EXIST=$BRANCH_EXIST" >> $GITHUB_ENV
+      - name: Create branch if not exists
+        run: git push origin HEAD:build
+        if: env.BRANCH_EXIST == '0'
+
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build
+          FOLDER: dist 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build: ({sha}) {msg}" # The commit message
 ```

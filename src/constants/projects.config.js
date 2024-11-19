@@ -79,7 +79,7 @@ export const FREELANCE_PROJECTS = [
     location: "Remote",
     description:
       "NextJS website styled with tailwindcss with a complete blog section powered by headless CMS and deployed it on AWS lightsail",
-    image: "/images/professional/heyStack.jpeg",
+    image: "/images/professional/heystack.jpeg",
     mlh: "#",
     links: [
       {

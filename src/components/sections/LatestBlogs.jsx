@@ -21,7 +21,7 @@ const LatestBlogs = () => {
       setPosts(data);
     };
     fetchPosts();
-  }, [posts]);
+  }, []);
 
   return (
     <div className="max-w-3xl  lg:mx-auto lg:-mt-20 md:mt-8 mx-4 md:mx-8 ">
