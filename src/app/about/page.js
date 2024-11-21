@@ -14,6 +14,11 @@ import { FiCornerUpLeft } from "react-icons/fi";
 
 const BLUR_FADE_DELAY = 0.04;
 
+export const metadata = {
+  title: "Shailendra Singh | About",
+  description: "A breif description about me and my work.",
+};
+
 export default function About() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-3xl md:mx-auto my-20 font-poppins mx-4">

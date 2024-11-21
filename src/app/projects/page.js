@@ -78,7 +78,13 @@ export default function Projects() {
                       <p className="text-muted-foreground md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed px-5">
                         These projects showcase my client work across various
                         industries. If my skills align with your needs,
-                        let&apos;s connect.
+                        let&apos;s{" "}
+                        <Link
+                          href="https://cal.com/shailendra1703"
+                          target="_blank"
+                        >
+                          <span className="text-blue-700">connect.</span>
+                        </Link>
                       </p>
                     </div>
                   </div>

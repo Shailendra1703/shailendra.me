@@ -117,7 +117,7 @@ export function ProjectCard({
             variant="destructive"
             className="flex gap-2 px-2 py-1 text-[10px] ml-1"
           >
-            <Icons.archive className="size-3" />
+            <Icons.archive className="h-3 w-3" />
             Archived
           </Badge>
         )}

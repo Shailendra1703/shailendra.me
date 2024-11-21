@@ -47,37 +47,15 @@ export const metadata = {
     { color: "white", media: "(prefers-color-scheme: light)" },
     { color: "black", media: "(prefers-color-scheme: dark)" },
   ],
-  title: "Shailendra Singh",
-  description: "Portfolio website of shailendra singh",
+  title: "Shailendra Singh | Home",
+  description:
+    "I'm Shailendra Singh, a web developer and cybersecurity enthusiast. I create innovative open-source projects, build websites and apps, and specialize in React, Next.js, and API integrations. Explore my work and journey here.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Shailendra Singh" />
-        <meta
-          property="og:description"
-          content="I'm Shailendra Singh, a web developer and cybersecurity enthusiast. I create innovative open-source projects, build websites and apps, and specialize in React, Next.js, and API integrations. Explore my work and journey here."
-        />
-        <meta property="og:url" content="https://singhshailendra.in" />
-
-        <meta property="og:image" content="" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Shailendra Singh" />
-        <meta
-          name="twitter:description"
-          content="I'm Shailendra Singh, a web developer and cybersecurity enthusiast. I create innovative open-source projects, build websites and apps, and specialize in React, Next.js, and API integrations. Explore my work and journey here."
-        />
-        <meta name="twitter:image" content="" />
-        <meta name="twitter:image:width" content="1200" />
-        <meta name="twitter:image:height" content="630" />
-      </head>
-
+      <head />
       <link rel="shortcut icon" href="/images/profile.jpg" />
       <body className="bg-white dark:bg-slate-950">
         <Providers>

@@ -1,5 +1,5 @@
 import { Icons } from "@/components/ui/icons";
-import { ExternalLink, Link } from "lucide-react";
+import { ExternalLink, Link, ArchiveIcon } from "lucide-react";
 
 export const PROJECTS = [
   {
@@ -59,6 +59,8 @@ export const FREELANCE_PROJECTS = [
     description: "ReactJS website Styled with Material UI",
     image: "/images/professional/crownworld.jpeg",
     mlh: "#",
+    archive: false,
+
     links: [
       {
         title: "Website",
@@ -81,6 +83,8 @@ export const FREELANCE_PROJECTS = [
       "NextJS website styled with tailwindcss with a complete blog section powered by headless CMS and deployed it on AWS lightsail",
     image: "/images/professional/heystack.jpeg",
     mlh: "#",
+    archive: false,
+
     links: [
       {
         title: "Website",
@@ -103,6 +107,8 @@ export const FREELANCE_PROJECTS = [
       "ReactJS crypto launchpad website with mint,swap, staking features",
     image: "/images/professional/bitcoinverse.jpg",
     mlh: "#",
+    archive: false,
+
     links: [
       {
         title: "Website",
@@ -124,6 +130,8 @@ export const FREELANCE_PROJECTS = [
     description: "ReactJS memecoin website for $BOG token",
     image: "#",
     mlh: "#",
+    archive: false,
+
     links: [
       {
         title: "Website",
@@ -135,6 +143,114 @@ export const FREELANCE_PROJECTS = [
       //   href: "#",
       //   icon: <ExternalLink className="h-3 w-3" />,
       // },
+    ],
+  },
+  {
+    title: "PlanMyAdmission",
+    role: "Developer",
+    dates: "2022",
+    location: "Remote",
+    description:
+      "ReactJS website with firbase backend for admission consultancy",
+    image: "#",
+    mlh: "#",
+    archive: false,
+
+    links: [
+      {
+        title: "Website",
+        href: "https://planmyadmission.com/",
+        icon: <Link className="h-3 w-3" />,
+      },
+      // {
+      //   title: "Proof",
+      //   href: "#",
+      //   icon: <ExternalLink className="h-3 w-3" />,
+      // },
+    ],
+  },
+  {
+    title: "Doge_Pepe_Cat",
+    role: "Developer",
+    dates: "2024",
+    location: "Remote",
+    description: "ReactJS memecoin website for $DOPECA token",
+    image: "#",
+    mlh: "#",
+    archive: false,
+
+    links: [
+      {
+        title: "Website",
+        href: "https://doge-pepe-cat.com/",
+        icon: <Link className="h-3 w-3" />,
+      },
+      // {
+      //   title: "Proof",
+      //   href: "#",
+      //   icon: <ExternalLink className="h-3 w-3" />,
+      // },
+    ],
+  },
+  {
+    title: "Biowastemedical Agency",
+    role: "Developer",
+    dates: "2023",
+    location: "Remote",
+    description:
+      "ReactJS website with landingpage and dashboard for medical waste management with functionalities like authentication,pagination,search,filter,report generation,qr generation and more",
+    image: "#",
+    mlh: "#",
+    archive: false,
+
+    links: [
+      {
+        title: "Website",
+        href: "https://biowasteagency.com/",
+        icon: <Link className="h-3 w-3" />,
+      },
+      // {
+      //   title: "Proof",
+      //   href: "#",
+      //   icon: <ExternalLink className="h-3 w-3" />,
+      // },
+    ],
+  },
+
+  {
+    title: "Suhavee",
+    role: "Shopify Developer",
+    dates: "2023",
+    location: "Remote",
+    description:
+      "Shopify website for women's clothing with custom template,checkout page and payment gateway integration",
+    image: "#",
+    mlh: "#",
+    archive: true,
+    links: [
+      {
+        title: "Archived",
+        href: "https://suhavee.com/",
+        icon: <ArchiveIcon className="h-3 w-3" />,
+      },
+    ],
+  },
+  {
+    title: "SEO Scientist",
+    role: "Wordpress Developer",
+    dates: "2023",
+    location: "Remote",
+    description:
+      "Worked on a wordpress website for a beauty clinic with custom template,checkout page and payment gateway [phonepe] integration",
+    image: "#",
+    mlh: "#",
+    archive: false,
+    links: [
+      {
+        title: "Website",
+        href: "https://drritikaskinclinic.com/",
+        icon: <Link className="h-3 w-3" />,
+      },
     ],
   },
 ];
