@@ -24,7 +24,7 @@ export const BlogCard = ({
         <div className="flex-none">
           <Avatar className="h-12 w-12 m-auto rounded-lg bg-muted-foreground border-2">
             <AvatarImage
-              src={!iconUrl || "/images/profile.jpg"}
+              src={iconUrl || "/images/profile.jpg"}
               alt={title}
               className="object-contain"
             />
