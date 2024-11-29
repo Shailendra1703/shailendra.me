@@ -21,8 +21,8 @@ export function generateMetadata({ params }) {
   } = post.metadata;
 
   const ogImage = image
-    ? `${DATA.url}${image}`
-    : `${DATA.url}/images/profile.jpg`; //TODO: change this to a default image
+    ? image
+    : `https://singhshailendra.in/og?title=${encodeURIComponent(title)}`;
 
   return {
     title,

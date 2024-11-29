@@ -9,7 +9,7 @@ export const metadata = {
     description: "Infrequent posts about design and tech",
     images: [
       {
-        url: "https://singhshailendra.in/og?title=blogs",
+        url: "https://singhshailendra.in/og?title=Blogs",
         width: 1200,
         height: 630,
         alt: "",
@@ -21,7 +21,7 @@ export const metadata = {
     description: "Infrequent posts about design and tech",
     images: [
       {
-        url: "https://singhshailendra.in/og?title=blogs",
+        url: "https://singhshailendra.in/og?title=Blogs",
         width: 1200,
         height: 630,
         alt: "",

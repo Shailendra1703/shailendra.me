@@ -9,53 +9,74 @@ import AnimateEnter from "@/components/ui/AnimateEnter";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  authors: [{ name: "Shailendra Singh", url: "https://singhshailendra.in" }],
-  category: "developer",
+  title: { default: "Shailendra Singh" },
   creator: "Shailendra Singh",
-  description: "software developer",
+  publisher: "Shailendra Singh",
+  description:
+    "I'm Shailendra Singh, a web developer and cybersecurity enthusiast",
   keywords: [
     "Shailendra Singh",
     "Shailendra",
-    "Jaipur",
     "singhshailendra",
     "singhshailendra.in",
-    "India",
-    "Next.js",
-    "React",
-    "JavaScript",
-    "TypeScript",
-    "TailwindCSS",
-    "Design",
-    "Engineering",
-    "Frontend",
-    "Developer",
-    "Software",
   ],
-  publisher: "Shailendra Singh",
+  authors: [{ name: "Shailendra Singh", url: "https://singhshailendra.in" }],
+  openGraph: {
+    title: "Shailendra Singh",
+    description:
+      "I'm Shailendra Singh, a web developer and cybersecurity enthusiast",
+    url: "https://singhshailendra.in",
+    siteName: "Shailendra Singh",
+    images: [
+      {
+        url: "https://singhshailendra.in/og.png",
+        width: 1200,
+        height: 630,
+        alt: "",
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
   robots: {
+    index: true,
     follow: true,
+    nocache: true,
     googleBot: {
-      follow: true,
       index: true,
+      follow: true,
+      "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
-      "max-video-preview": -1,
     },
-    index: true,
   },
-  themeColor: [
-    { color: "white", media: "(prefers-color-scheme: light)" },
-    { color: "black", media: "(prefers-color-scheme: dark)" },
-  ],
-  title: "Shailendra Singh | Home",
-  description:
-    "I'm Shailendra Singh, a web developer and cybersecurity enthusiast. I create innovative open-source projects, build websites and apps, and specialize in React, Next.js, and API integrations. Explore my work and journey here.",
+  // icons: {
+  //   icon: "/icons/favicon.ico",
+  //   apple: "/icons/apple-touch-icon.png",
+  // },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shailendra Singh",
+    description:
+      "I'm Shailendra Singh, a web developer and cybersecurity enthusiast",
+    siteId: "singhshailendra",
+    creator: "singhshailendra",
+    creatorId: "singhshailendra",
+    images: {
+      url: "https://singhshailendra.in/og.png",
+      alt: "",
+    },
+  },
+
+  alternates: {
+    canonical: "https://singhshailendra.in",
+  },
+  category: "technology",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head />
       <link rel="shortcut icon" href="/images/profile.jpg" />
       <body className="bg-white dark:bg-slate-950">
         <Providers>
