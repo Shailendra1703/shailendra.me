@@ -128,7 +128,7 @@ export const FREELANCE_PROJECTS = [
     dates: "2024",
     location: "Remote",
     description: "ReactJS memecoin website for $BOG token",
-    image: "#",
+    image: "/images/professional/bogg.png",
     mlh: "#",
     archive: false,
 
@@ -145,21 +145,21 @@ export const FREELANCE_PROJECTS = [
       // },
     ],
   },
+
   {
-    title: "PlanMyAdmission",
+    title: "Doge Pepe Cat",
     role: "Developer",
-    dates: "2022",
+    dates: "2024",
     location: "Remote",
-    description:
-      "ReactJS website with firbase backend for admission consultancy",
-    image: "#",
+    description: "ReactJS memecoin website for $DOPECA token",
+    image: "/images/professional/dopeca.png",
     mlh: "#",
     archive: false,
 
     links: [
       {
         title: "Website",
-        href: "https://planmyadmission.com/",
+        href: "https://doge-pepe-cat.com/",
         icon: <Link className="h-3 w-3" />,
       },
       // {
@@ -170,19 +170,20 @@ export const FREELANCE_PROJECTS = [
     ],
   },
   {
-    title: "Doge_Pepe_Cat",
+    title: "PlanMyAdmission",
     role: "Developer",
-    dates: "2024",
+    dates: "2022",
     location: "Remote",
-    description: "ReactJS memecoin website for $DOPECA token",
-    image: "#",
+    description:
+      "ReactJS website with firbase backend for admission consultancy",
+    image: "/images/professional/pma.svg",
     mlh: "#",
     archive: false,
 
     links: [
       {
         title: "Website",
-        href: "https://doge-pepe-cat.com/",
+        href: "https://planmyadmission.com/",
         icon: <Link className="h-3 w-3" />,
       },
       // {

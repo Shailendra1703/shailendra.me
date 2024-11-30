@@ -4,7 +4,7 @@ export const CHANGELOG = [
     events: [
       "Graduated from college with a degree in Computer Science",
       "Started working at Sophos as a Threat Researcher",
-      "Started my journey to interact with the community (majorly X ) and help them grow",
+      "Started my journey to interact with the community (majorly X )",
     ],
   },
   {

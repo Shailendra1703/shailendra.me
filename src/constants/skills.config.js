@@ -48,7 +48,7 @@ export const SKILLS = [
     technologies: ["BURP Suite", "OWASP", "Nmap"],
   },
   {
-    category: "Firmware",
+    category: "Languages",
     technologies: ["C++", "Python"],
   },
 ];

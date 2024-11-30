@@ -18,7 +18,7 @@ export const metadata = {
     ],
   },
   twitter: {
-    title: "Writing",
+    title: "Blogs",
     card: "summary_large_image",
     description: "I write sometimes please check them out",
     images: [

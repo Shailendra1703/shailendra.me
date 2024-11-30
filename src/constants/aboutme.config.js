@@ -1,6 +1,6 @@
 export const DATA = {
   about:
-    "Exploring ways to create robust, scalable web Apps, Unlimitedly obsessed with solving problems where designing and engineering intersects, by creating pixel-perfect , polished interfaces. Currently tinkering with various projects. studying Computer Science, Interested in coding and improving consistently through learning. Currently interested in React Native and TypeScript",
+    "I am a self-taught developer who loves to code and build things. I am a full-stack developer with a passion for web development. I have worked with many clients and completed internships, learning something new each time. I am a quick learner and always ready to learn new technologies. I am a team player and always ready to help others.",
 
   url: "https://singhshailendra.in",
   name: "Shailendra Singh",

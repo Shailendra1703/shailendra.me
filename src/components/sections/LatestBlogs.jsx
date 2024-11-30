@@ -33,8 +33,7 @@ const LatestBlogs = () => {
 
           <p className="text-muted-foreground md:text-base/relaxed py-4">
             I love sharing my knowledge with others. I hope you will click on
-            them by mistake. Here are a few of my latest articles. You can find
-            more on my{" "}
+            them. Here are a few of my latest articles. You can find more on my{" "}
             <Link href="/blogs" className="text-blue-500 hover:underline">
               blog page
             </Link>

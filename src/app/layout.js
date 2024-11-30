@@ -3,6 +3,7 @@ import Footer from "@/components/ui/Footer";
 import Providers from "./providers";
 import RollingIcons from "@/components/ui/RollingIcons";
 import AnimateEnter from "@/components/ui/AnimateEnter";
+import Script from "next/script";
 
 export const metadata = {
   title: { default: "Shailendra Singh" },
@@ -27,7 +28,7 @@ export const metadata = {
       {
         url: "https://singhshailendra.in/og.png",
         width: 1200,
-        height: 630,
+        height: 678,
         alt: "",
       },
     ],
@@ -73,6 +74,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="d3c56799-22aa-4622-b0d5-b686d3adf197"
+        />
+      </head>
       <link rel="shortcut icon" href="/images/profile.jpg" />
       <body className="bg-white dark:bg-slate-950">
         <Providers>
