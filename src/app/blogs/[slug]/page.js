@@ -22,7 +22,7 @@ export function generateMetadata({ params }) {
 
   const ogImage = image
     ? image
-    : `https://singhshailendra.in/og?title=${encodeURIComponent(title)}`;
+    : `https://singhshailendra.in/api/og?title=${encodeURIComponent(title)}`;
 
   return {
     title,
@@ -91,7 +91,7 @@ export default ({ params }) => {
           className="exclude flex h-8 items-center text-neutral-500"
         >
           <FiCornerUpLeft className="h-4 w-4" />
-          <span className="ml-1.5 text-sm">Writings</span>
+          <span className="ml-1.5 text-sm">Blogs</span>
         </Link>
         <Header
           title={post.metadata.title}

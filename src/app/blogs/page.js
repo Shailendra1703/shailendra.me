@@ -3,13 +3,14 @@ import Main from "@components/blogs/Main";
 
 export const metadata = {
   title: "Blogs",
-  description: "Infrequent posts about design and tech",
+  description: "I write sometimes please check them out",
   openGraph: {
     title: "Blogs",
-    description: "Infrequent posts about design and tech",
+    description: "I write sometimes please check them out",
+
     images: [
       {
-        url: "https://singhshailendra.in/og?title=Blogs",
+        url: "https://singhshailendra.in/api/og?title=Blogs",
         width: 1200,
         height: 630,
         alt: "",
@@ -18,10 +19,11 @@ export const metadata = {
   },
   twitter: {
     title: "Writing",
-    description: "Infrequent posts about design and tech",
+    card: "summary_large_image",
+    description: "I write sometimes please check them out",
     images: [
       {
-        url: "https://singhshailendra.in/og?title=Blogs",
+        url: "https://singhshailendra.in/api/og?title=Blogs",
         width: 1200,
         height: 630,
         alt: "",

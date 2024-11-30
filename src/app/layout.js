@@ -1,12 +1,8 @@
 import "./globals.css";
-import Navbar from "@/components/ui/Navbar";
-import { Inter } from "next/font/google";
 import Footer from "@/components/ui/Footer";
 import Providers from "./providers";
 import RollingIcons from "@/components/ui/RollingIcons";
 import AnimateEnter from "@/components/ui/AnimateEnter";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: { default: "Shailendra Singh" },
@@ -50,10 +46,10 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  // icons: {
-  //   icon: "/icons/favicon.ico",
-  //   apple: "/icons/apple-touch-icon.png",
-  // },
+  icons: {
+    icon: "/icons/favicon.ico",
+    apple: "/icons/apple-touch-icon.png",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Shailendra Singh",

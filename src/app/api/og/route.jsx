@@ -1,4 +1,4 @@
-import { ImageResponse } from "@vercel/og";
+import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
 
@@ -6,6 +6,9 @@ export const GET = async (req) => {
   const { searchParams } = req.nextUrl;
 
   const title = searchParams.get("title");
+  const font = fetch(
+    new URL("../../font/inter/og/semibold.ttf", import.meta.url)
+  ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
     (
@@ -28,6 +31,7 @@ export const GET = async (req) => {
         <div
           style={{
             fontSize: 24,
+            fontFamily: "Inter",
             color: "black",
             letterSpacing: -0.5,
             marginLeft: 12,
